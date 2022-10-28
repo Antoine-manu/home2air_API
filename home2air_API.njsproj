@@ -30,6 +30,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="controllers\Company_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Custom_notifications_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Notifications_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Notifications_types_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Places_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Roles_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Room_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Sensor_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Settings_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\Tickets_controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="controllers\User_controller.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\company.js">
       <SubType>Code</SubType>
     </Content>
@@ -71,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="models\" />
+    <Folder Include="controllers\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
