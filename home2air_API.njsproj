@@ -30,7 +30,37 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="routes\company.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\custom_notifications.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\index.js" />
+    <Content Include="routes\notifications.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\notifications_types.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\places.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\roles.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\room.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\sensor.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\settings.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\tickets.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\users.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
