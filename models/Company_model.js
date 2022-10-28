@@ -10,9 +10,9 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     Company.init({
-        id_company: DataTypes.INTEGER,
-        user_id: DataTypes.INTEGER,
-        name: DataTypes.STRING,
+        id_company: { type: DataTypes.INTEGER, allowNull: false, primaryKey: true, autoIncrement: true },
+        user_id: { type: DataTypes.INTEGER, allowNull: false },
+        name: { type: DataTypes.STRING, allowNull: false }
     }, {
         sequelize, modelName: 'Company'
     });

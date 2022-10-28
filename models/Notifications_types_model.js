@@ -10,9 +10,12 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     NotificationsTypes.init({
-        id_type: DataTypes.INTEGER,
-        name: DataTypes.STRING,
-
+        id_type: {
+            type: DataTypes.INTEGER, allowNull: false, primaryKey: true, autoIncrement: true
+        },
+        name: {
+            type: DataTypes.STRING, allowNull: false
+        }
     }, {
         sequelize, modelName: 'NotificationsTypes'
     });

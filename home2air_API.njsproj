@@ -30,28 +30,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
-    <Content Include="models\Company.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="models\Custom_notifications.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="models\Notifications.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="models\Notifications_types.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="models\Places.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="models\Roles.js" />
-    <Content Include="models\Room.js" />
-    <Content Include="models\Sensor.js" />
-    <Content Include="models\Settings.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="models\Tickets.js" />
     <Content Include="routes\company.js">
       <SubType>Code</SubType>
     </Content>
