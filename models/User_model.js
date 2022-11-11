@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     }
     User.init({
         id_user: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true, allowNull: false },
+        username: { type: DataTypes.STRING, allowNull: false },
         firstname: { type: DataTypes.STRING, allowNull: false },
         lastname: { type: DataTypes.STRING, allowNull: false },
         email: { type: DataTypes.STRING, allowNull: false },
@@ -24,11 +25,8 @@ module.exports = (sequelize, DataTypes) => {
         created_at: { type: DataTypes.DATE, allowNull: false },
         deleted_at: { type: DataTypes.DATE, allowNull: false },
         active: { type: DataTypes.BOOLEAN, allowNull: false },
-        sensor_amount_locked: { type: DataTypes.BOOLEAN, allowNull: false },
-        spaces_amount_locked: { type: DataTypes.BOOLEAN, allowNull: false },
-        sensore_amount_max: { type: DataTypes.INTEGER, allowNull: false },
-        spaces_amount_max: { type: DataTypes.INTEGER, allowNull: false },
-        parent_account: { type: DataTypes.INTEGE, allowNull: true }
+        img: { type: DataTypes.STRING, allowNull: false },
+        place_id: { type: DataTypes.INTEGER, allowNull: false }
     }, {
         sequelize,
         modelName: 'User',

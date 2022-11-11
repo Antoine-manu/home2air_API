@@ -14,9 +14,11 @@ module.exports = (sequelize, DataTypes) => {
         title: { type: DataTypes.STRING, allowNull: false },
         data_id: { type: DataTypes.INTEGER, allowNull: false },
         limit: { type: DataTypes.INTEGER, allowNull: false },
+        message: { type: DataTypes.STRING, allowNull: false },
         sound: { type: DataTypes.STRING, allowNull: false },
         icon: { type: DataTypes.STRING, allowNull: false },
-        type_id: { type: DataTypes.INTEGER, allowNull: false }
+        type_id: { type: DataTypes.INTEGER, allowNull: false },
+        notif_id: { type: DataTypes.INTEGER, allowNull: false },
     }, {
         sequelize, modelName: 'CustomNotifications'
     });

@@ -63,6 +63,12 @@
     <Content Include="controllers\User_controller.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="models\Notification_msg_model.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="models\Tickets_comm_model.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\company.js">
       <SubType>Code</SubType>
     </Content>
@@ -98,9 +104,6 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
-    <Content Include="views\index.pug" />
-    <Content Include="views\layout.pug" />
-    <Content Include="views\error.pug" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="models\" />
@@ -110,7 +113,6 @@
     <Folder Include="public\javascripts\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
-    <Folder Include="views\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>

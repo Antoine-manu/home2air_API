@@ -13,7 +13,6 @@ module.exports = (sequelize, DataTypes) => {
         id_notifications: { type: DataTypes.INTEGER, allowNull: false, autoIncrement: true, primaryKey: true },
         user_id: { type: DataTypes.INTEGER, allowNull: false },
         custom: { type: DataTypes.BOOLEAN, allowNull: false },
-        custom_id: { type: DataTypes.INTEGER, allowNull: false },
         read: { type: DataTypes.BOOLEAN, allowNull: false },
         type: { type: DataTypes.INTEGER, allowNull: false },
         date: { type: DataTypes.DAT, allowNull: false }

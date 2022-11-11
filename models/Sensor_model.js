@@ -19,7 +19,8 @@ module.exports = (sequelize, DataTypes) => {
         name: { type: DataTypes.STRING, allowNull: false },
         udpated_at: {
             type: DataTypes.DATE, allowNull: false
-        }
+        },
+        parameters: { type: DataTypes.STRING, allowNull: false }
     }, {
         sequelize, modelName: 'Sensor'
     });
