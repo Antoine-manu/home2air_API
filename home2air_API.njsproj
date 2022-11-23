@@ -63,7 +63,13 @@
     <Content Include="controllers\User_controller.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="models\const.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="models\Notification_msg_model.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="models\server.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="models\Tickets_comm_model.js">

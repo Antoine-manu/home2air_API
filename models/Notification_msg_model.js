@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     Notification_msg.init({
-        id_ticket_comm: { type: DataTypes.INTEGER, allowNull: false, primaryKey: true, autoIncrement: true },
+        id_notif_msg: { type: DataTypes.INTEGER, allowNull: false, primaryKey: true, autoIncrement: true },
         content: { type: DataTypes.STRING, allowNull: false }
 
     }, {

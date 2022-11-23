@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     Settings.init({
-        id_settings: { type: DataTypes.INTEGER,, allowNull: false, autoIncrement: true, primaryKey: true },
-        user_id: { type: DataTypes.INTEGER,, allowNull: false },
+        id_settings: { type: DataTypes.INTEGER, allowNull: false, autoIncrement: true, primaryKey: true },
+        user_id: { type: DataTypes.INTEGER, allowNull: false },
         dark_mode: { type: DataTypes.INTEGER = 1, allowNull: false },
         notifications: { type: DataTypes.INTEGER, allowNull: false }
 

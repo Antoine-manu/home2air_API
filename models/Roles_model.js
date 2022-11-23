@@ -1,6 +1,5 @@
-
 'use strict'
-const sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 const {
     Model
 } = require('sequelize');
@@ -10,11 +9,20 @@ module.exports = (sequelize, DataTypes) => {
 
         }
     }
-    Roles.init({
-        id_role: { type: DataTypes.INTEGER, allowNull: false, autoIncrement: true, primaryKey: true },
-        name: { type: DataTypes.STRING, allowNull: false }
-    }, {
-        sequelize, modelName: 'Roles'
-    });
-    return Roles;
-}
+	Roles.init(
+		{
+			id_role: {
+				type: Sequelize.INTEGER,
+				allowNull: false,
+				autoIncrement: true,
+				primaryKey: true
+			},
+			name: { type: Sequelize.STRING, allowNull: false }
+		},
+		{
+			sequelize,
+			modelName: 'Roles'
+		}
+	);
+	return Room;
+};

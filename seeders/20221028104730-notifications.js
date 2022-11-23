@@ -2,24 +2,23 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
-  },
+	async up(queryInterface, Sequelize) {
+		return queryInterface.createTable('Notifications', {
+			id_notifications: {
+				type: Sequelize.DataTypes.INTEGER,
+				allowNull: false,
+				autoIncrement: true,
+				primaryKey: true
+			},
+			user_id: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
+			custom: { type: Sequelize.DataTypes.BOOLEAN, allowNull: false },
+			read: { type: Sequelize.DataTypes.BOOLEAN, allowNull: false },
+			type: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
+			date: { type: Sequelize.DataTypes.DATE, allowNull: false }
+		});
+	},
 
-  async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
-  }
+	async down(queryInterface, Sequelize) {
+		return queryInterface.dropTable('Notifications');
+	}
 };
